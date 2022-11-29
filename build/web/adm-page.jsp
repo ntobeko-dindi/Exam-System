@@ -9,18 +9,14 @@
 </head>
 <body>
 	<div class="top-area">
-		<center><h2>Admin Panel</h2></center> <a href="controller.jsp?page=logout" class="button" style="float: right;background:crimson;color:white">Logout</a>
+		<center><h2>Administrator</h2></center>
 	</div>
 
         <%
             if(session.getAttribute("userStatus")!=null){
             if(session.getAttribute("userStatus").equals("1")){
             
-            %>
-            
-            
-            
-            
+            %>          
             
             <% 
             //pgpart = pagepart, accounts=1,courses=2,questions=3 and profile is default
