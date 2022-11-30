@@ -18,6 +18,7 @@
             <a href="adm-page.jsp?pgprt=2"><h2>Manage Tests</h2></a>
             <a class="active" href="adm-page.jsp?pgprt=3"><h2>Questions</h2></a>
             <a href="adm-page.jsp?pgprt=1"><h2>Manage Students</h2></a>
+            <a href="adm-page.jsp?pgprt=8"><h2>View Grades</h2></a>
             <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
             <a href="controller.jsp?page=logout"><h2>Logout</h2></a>
         </div>

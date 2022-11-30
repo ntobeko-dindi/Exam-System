@@ -197,6 +197,23 @@ public class DatabaseClass {
         return list;
     }
     
+        public ArrayList getAllGrades(){
+        ArrayList list=new ArrayList();
+        try {
+            String sql="SELECT * from exams";
+            PreparedStatement pstm=conn.prepareStatement(sql);
+            ResultSet rs=pstm.executeQuery();
+            while(rs.next()){
+                Exams exam = (Exams) rs;
+                list.add(exam);
+            }
+            pstm.close();
+        } catch (SQLException ex) {
+            Logger.getLogger(DatabaseClass.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        return list;
+    }
+    
     public void addNewCourse(String courseName,int tMarks,String time){
         try {
             String sql="INSERT into courses(course_name,total_marks,time) Values(?,?,?)";
@@ -286,6 +303,7 @@ public class DatabaseClass {
         }
         return list;
     }
+    
     
     public int startExam(String cName,int sId){
         int examId=0;

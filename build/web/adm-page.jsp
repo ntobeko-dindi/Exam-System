@@ -36,10 +36,19 @@
                 
                 <%
                 
-            }else if(request.getParameter("pgprt").equals("3")){
+            }
+else if(request.getParameter("pgprt").equals("2")){
+            
                 %>
             
-                <jsp:include page="questions.jsp"/>
+                <jsp:include page="courses.jsp"/>
+                
+                <%}
+
+else if(request.getParameter("pgprt").equals("8")){
+                %>
+            
+                <jsp:include page="results_1.jsp"/>
             <%
             }else if(request.getParameter("pgprt").equals("4")){// if( 4 == 4 )
                 %>

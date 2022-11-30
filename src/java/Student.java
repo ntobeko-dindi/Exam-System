@@ -1,9 +1,7 @@
 
-public class Student {
+public abstract class Student {
     String name;
     int age;
     
-    public void getName(){
-        System.out.println(name);
-    }  
+    public abstract void getName();
 }
