@@ -48,7 +48,7 @@
                 <td><%=list.get(i + 1)%></td>
                 <td ><a  href="controller.jsp?page=courses&operation=del&cname=<%=list.get(i)%>" 
                          onclick="return confirm('Are you sure you want to delete this ?');" class="del">
-                        <div class="delete-btn" style="max-width: 40px;font-size: 17px; padding: 3px">X</div>
+                        <div class="delete-btn" style="max-width: 60px;font-size: 17px; padding: 3px">Delete</div>
                     </a></td>
             </tr>
             <%
@@ -66,16 +66,16 @@
                 <table >
                     <tr>
                         <td><label>Course Name</label></td>
-                        <td> <input type="text" name="coursename" class="text" placeholder="Course Name" style="width: 600px;"></td>
+                        <td> <input type="text" name="coursename" class="text" placeholder="Course Name" style="width: 600px;" required></td>
                     </tr>
                     <tr>
                         <td><label>Total Marks</label></td>
-                        <td><input type="text" name="totalmarks" class="text" placeholder="Total Marks" style="width: 600px;" ></td>
+                        <td><input type="number" name="totalmarks" class="text" placeholder="Total Marks" style="width: 600px;" required></td>
                     </tr>
                     <tr>
                         <td><label>Exam Time</label></td>
                         <td>
-                            <input type="number" name="time" class="text" placeholder="Minutes" style="width: 600px;" >
+                            <input type="number" name="time" class="text" placeholder="Minutes" style="width: 600px;" required>
                         </td>
                     </tr>
                     <tr>

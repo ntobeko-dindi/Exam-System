@@ -9,18 +9,20 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="newcss.css">
     </head>
-    <body>
+    <body style="background: #CCC;">
         <div class="registration-form">
             <form method='post' action="controller.jsp">
                 <input type="hidden" name="page" value="login"> 
+                <center style="font-weight: bolder;"><h1>TestTaker</h1></center>
+                <br/>
                 <div class="form-icon">
                     <span><i class="icon icon-user"></i></span>
                 </div>
                 <div class="form-group">
-                    <input type="text" class="form-control item" id="username" name="username" placeholder="Username">
+                    <input type="text" class="form-control item" id="username" name="username" placeholder="Username" required>
                 </div>
                 <div class="form-group">
-                    <input type="password" class="form-control item" id="password" name="password" placeholder="Password">
+                    <input type="password" class="form-control item" id="password" name="password" placeholder="Password" required>
                 </div>
                 <%
                     if (request.getSession().getAttribute("userStatus") != null) {

@@ -58,7 +58,7 @@
                     <td style="min-width: 260px;"><%=user.getAddress()%></td>
                     <td style="min-width: 260px;"><a href="controller.jsp?page=accounts&operation=del&uid=<%=user.getUserId()%>" 
                            onclick="return confirm('Are you sure you want to delete this Student?');">
-                            <div class="delete-btn" style="min-width: 260px;font-size: 17px; padding: 3px">X</div>
+                            <div class="delete-btn" style="min-width: 260px;font-size: 17px; padding: 3px">Delete</div>
                         </a></td>
                 </tr>
                 <%
