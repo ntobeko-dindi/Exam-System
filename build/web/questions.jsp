@@ -118,7 +118,7 @@
                     <td><input type="checkbox" name="correct2" class="text" placeholder="Correct Answer" style="min-width: 25px !important;min-height: 35px !important;"><h2>False</h2></td>
                 <tr>
                     <td colspan="5"><input type="hidden" name="page2" value="questions">
-                        <input type="hidden" name="operation2" value="addnew">
+                        <input type="hidden" name="operation2" value="addnewMultiple">
                         <input type="submit" class="form-button" value="Add" name="submit2"></td>
                 </tr>
             </table>

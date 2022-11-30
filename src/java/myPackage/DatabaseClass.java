@@ -323,7 +323,9 @@ public class DatabaseClass {
             Logger.getLogger(DatabaseClass.class.getName()).log(Level.SEVERE, null, ex);
         }
          return id;
-    }public String getStartTime(int examId){
+    }
+    
+    public String getStartTime(int examId){
         String time="";
         try {
             
