@@ -1,14 +1,14 @@
-
 package myPackage.classes;
 
-
 public class User {
-   private int userId;
-   private String firstName,lastName,userName,email,password,type,contact,city,address;
 
-   public User(){
-       
-   }
+    private int userId;
+    private String firstName, lastName, userName, email, password, type, contact, city, address;
+
+    public User() {
+
+    }
+
     public User(int userId, String firstName, String lastName, String userName, String email, String password, String type, String contact, String city, String address) {
         this.userId = userId;
         this.firstName = firstName;
@@ -102,5 +102,4 @@ public class User {
         this.address = address;
     }
 
-   
 }

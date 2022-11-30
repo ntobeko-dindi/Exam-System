@@ -50,8 +50,4 @@ public class Courses {
     public void setTime(String time) {
         this.time = time;
     }
-    
-
-   
-    
 }

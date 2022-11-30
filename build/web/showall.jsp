@@ -1,4 +1,6 @@
 
+<%@page import="java.util.Iterator"%>
+<%@page import="java.util.Set"%>
 <%@page import="myPackage.classes.Questions"%>
 <%@page import="java.util.ArrayList"%>
 <jsp:useBean id="pDAO" class="myPackage.DatabaseClass" scope="page"/>
@@ -26,14 +28,18 @@
     <center>
         <%
             if (request.getParameter("coursename") != null) {
-                ArrayList list = pDAO.getAllQuestions(request.getParameter("coursename"));
-                for (int i = 0; i < list.size(); i++) {
-                    Questions question = (Questions) list.get(i);
-
+                Set hash_Set = pDAO.getAllQuestions(request.getParameter("coursename"));
+                
+                Iterator<Questions> iterator = hash_Set.iterator();
+                
+                int counter = 0;
+                 while (iterator.hasNext()) {
+                    Questions question = iterator.next();
+                    counter++;                
         %>
         <div class="question-panel">
             <div class="question" >
-                <label class="question-label"><%=i + 1%></label>
+                <label class="question-label"><%=counter%></label>
                 <%=question.getQuestion()%>	
                 <a href="controller.jsp?page=questions&operation=delQuestion&qid=<%=question.getQuestionId()%>" 
                    onclick="return confirm('Are you sure you want to delete this Question?');" >

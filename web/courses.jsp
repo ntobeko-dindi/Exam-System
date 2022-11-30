@@ -58,15 +58,15 @@
     </div>
     <div  class="panel form-style-6" style="float: left;min-width: 50%;" >
         <div class="title">
-            Add New Course
+            Set New Test
         </div>
         <center>
             <form action="controller.jsp" >
                 <br>
                 <table >
                     <tr>
-                        <td><label>Course Name</label></td>
-                        <td> <input type="text" name="coursename" class="text" placeholder="Course Name" style="width: 600px;" required></td>
+                        <td><label>Course & Test Name</label></td>
+                        <td> <input type="text" name="coursename" class="text" placeholder="Course & Test Name" style="width: 600px;" required></td>
                     </tr>
                     <tr>
                         <td><label>Total Marks</label></td>
@@ -81,7 +81,7 @@
                     <tr>
                         <td colspan="2"><input type="hidden" name="page" value="courses">
                             <input type="hidden" name="operation" value="addnew">
-                    <center><input type="submit" class="form-button" value="Add" name="submit"></center></td>
+                            <input type="submit" class="form-button" value="Add" name="submit"></td>
                     </tr>
                 </table>
 

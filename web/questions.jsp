@@ -21,7 +21,7 @@
 </div>
 <!-- CONTENT AREA -->
 <div class="content-area" >
-    <div class="panel form-style-6" style="min-width: 600px;max-width: 690px;float: left">
+    <div class="panel form-style-6" style="min-width: 500px;max-width: 690px;float: left">
         <form action="adm-page.jsp">
             <div class="title">Show All Questions for</div>
             <br><br>

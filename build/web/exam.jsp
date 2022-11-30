@@ -110,7 +110,7 @@
                 if (request.getParameter("showresult").equals("1")) {
                     Exams result = pDAO.getResultByExamId(Integer.parseInt(request.getParameter("eid")));
             %>
-            <div class="panel" style="float: left;max-width: 100%">
+            <div class="panel" style="float: left;min-width: 90%">
                 <div class="title">Recent Test Results</div>
                 <div class="profile">
                     <span class="tag">Test Date</span><span class="val"><%=result.getDate()%></span><br/>

@@ -15,7 +15,9 @@ import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -373,8 +375,10 @@ public class DatabaseClass {
      return marks;
     }
     
-    public ArrayList getAllQuestions(String courseName){
-        ArrayList list=new ArrayList();
+    public Set getAllQuestions(String courseName){
+        
+        Set<Questions> hash_Set = new HashSet<Questions>();
+        
         try {
             
             String sql="Select * from questions where course_name=?";
@@ -387,13 +391,13 @@ public class DatabaseClass {
                        rs.getInt(1),rs.getString(3),rs.getString(4),rs.getString(5),
                        rs.getString(6),rs.getString(7),rs.getString(8),rs.getString(2)
                     ); 
-               list.add(question);
+               hash_Set.add(question);
             }
             pstm.close();
         } catch (SQLException ex) {
             Logger.getLogger(DatabaseClass.class.getName()).log(Level.SEVERE, null, ex);
         }
-        return list;
+        return hash_Set;
     }
     
     public ArrayList getAllAnswersByExamId(int examId){
